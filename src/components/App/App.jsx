@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Statistics from '../Statistics';
 class App extends Component {
   state = {
     good: 0,
@@ -7,3 +7,5 @@ class App extends Component {
     bad: 0,
   };
 }
+
+export default App;
