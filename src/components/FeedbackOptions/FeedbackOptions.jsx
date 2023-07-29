@@ -1,19 +1,23 @@
 import PropTypes from 'prop-types';
-import Button from './FeedbackOptionsStyles';
+import { Button } from './FeedbackOptionsStyles';
 
 const FeedbackOptions = ({ options, onButtonClick }) => {
-  <div>
-    {options.map(option => (
-      <Button
-        type="button"
-        key={option}
-        onClick={() => onButtonClick()}
-      ></Button>
-    ))}
-  </div>;
+  return (
+    <div>
+      {options.map(option => (
+        <Button
+          type="button"
+          key={option}
+          onClick={() => onButtonClick(option)}
+        >
+          {option}
+        </Button>
+      ))}
+    </div>
+  );
 };
 
-FeedbackOptions.PropTypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.array.isRequired,
   onButtonClick: PropTypes.func.isRequired,
 };

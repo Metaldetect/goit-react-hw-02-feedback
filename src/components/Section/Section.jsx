@@ -2,13 +2,15 @@ import PropTypes from 'prop-types';
 import { Title, Container } from './SectionStyles';
 
 const Section = ({ title, children }) => {
-  <Container>
-    <Title>{title}</Title>
-    <>{children}</>
-  </Container>;
+  return (
+    <Container>
+      <Title>{title}</Title>
+      <>{children}</>
+    </Container>
+  );
 };
 
-Section.PropTypes = {
+Section.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
 };

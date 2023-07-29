@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 
-
 const Notafication = ({ message = '' }) => {
-  <>
-    <p>{message}</p>
-  </>;
+  return (
+    <>
+      <p>{message}</p>
+    </>
+  );
 };
 
 Notafication.propTypes = {
