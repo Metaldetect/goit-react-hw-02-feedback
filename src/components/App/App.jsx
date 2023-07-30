@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Statistics from 'components/Statistics';
 import Notafication from 'components/Notafication';
 import Section from 'components/Section';
