@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Statistics from 'components/Statistics';
 import Notafication from 'components/Notafication';
 import Section from 'components/Section';
@@ -13,10 +12,9 @@ class App extends Component {
   };
 
   handleButtonClick = option => {
-    this.setState(prevState => ({
-      ...prevState,
-      [option]: prevState[option] + 1,
-    }));
+    this.setState({
+      [option]: this.state[option] + 1,
+    });
   };
 
   countTotalFeedback = () => {

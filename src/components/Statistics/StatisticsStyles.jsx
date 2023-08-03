@@ -6,7 +6,7 @@ export const StyledUl = styled.ul`
   margin: 0;
 
   li {
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 `;

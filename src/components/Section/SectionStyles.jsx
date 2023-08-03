@@ -1,11 +1,15 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.section`
-  padding: 20px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
 `;
 
 export const Title = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
   color: #476284;
-  font-size: 40px;
+  font-size: 2rem;
 `;

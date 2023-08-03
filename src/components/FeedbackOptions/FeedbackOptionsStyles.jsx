@@ -1,24 +1,21 @@
 import styled from '@emotion/styled';
 
 export const Button = styled.button`
-  background-color: black;
-  width: 100px;
-  height: 50px;
+  background-color: #007bff;
   color: white;
-  padding: 5px 15px;
+  padding: 1rem 2rem;
+  border: none;
   border-radius: 4px;
   text-transform: capitalize;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
 
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 1rem;
   }
 
-  :hover,
-  :focus {
-    background-color: white;
-    color: black;
-    border: solid #6c0599 1px;
-
-    transition: all 0.3s;
+  &:hover,
+  &:focus {
+    background-color: #0056b3;
   }
 `;
